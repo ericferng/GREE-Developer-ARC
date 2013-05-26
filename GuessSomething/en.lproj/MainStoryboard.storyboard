@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HSn-oE-0DA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - GREE-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YE3-Ft-1oW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ucz-TT-leB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="2"/>
+                                <state key="normal" title="Log Out of Gree" backgroundImage="btn-yellow.png">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="0.89986974159999999" blue="0.93944309319999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLogout:" destination="2" eventType="touchUpInside" id="lKz-1N-LX0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVX-W0-wX2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6RI-ds-poV"/>
+                                    <constraint firstAttribute="width" constant="139" id="POz-ud-dhG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Login" backgroundImage="btn-blue.png">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="0.89986974159999999" blue="0.93944309319999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStart:" destination="2" eventType="touchUpInside" id="ZhS-K1-gD6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="4og-Sp-KtU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="2H2-C7-tka"/>
+                                </constraints>
+                                <string key="text">Go to AppDelegate.m and add your [GreePlatform initializeWithApplicationId:@"XXXX" consumerKey:@"XXXX" consumerSecret:@"XXXX" settings:settings delegate:self];</string>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.95319541939999997" blue="0.071986538330000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4og-Sp-KtU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="EUT-El-dfA"/>
+                            <constraint firstItem="ZVX-W0-wX2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="157" id="LcT-ur-DXV"/>
+                            <constraint firstItem="4og-Sp-KtU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="gBJ-xl-qma"/>
+                            <constraint firstItem="YE3-Ft-1oW" firstAttribute="centerX" secondItem="ZVX-W0-wX2" secondAttribute="centerX" type="default" id="jOF-fe-xTI"/>
+                            <constraint firstAttribute="trailing" secondItem="4og-Sp-KtU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="mvX-H6-Kt6"/>
+                            <constraint firstItem="ZVX-W0-wX2" firstAttribute="centerX" secondItem="4og-Sp-KtU" secondAttribute="centerX" type="default" id="q09-h3-rJo"/>
+                            <constraint firstItem="YE3-Ft-1oW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="245" id="qvF-mU-syY"/>
+                            <constraint firstItem="YE3-Ft-1oW" firstAttribute="trailing" secondItem="ZVX-W0-wX2" secondAttribute="trailing" type="default" id="vK3-L4-yiF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GREE" id="4ba-Aa-LCj"/>
+                    <connections>
+                        <outlet property="buttonEnterOut" destination="ZVX-W0-wX2" id="JzG-2x-I92"/>
+                        <outlet property="buttonLogoutOut" destination="YE3-Ft-1oW" id="AT1-a1-4Pi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-66"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ffn-H0-ZN9">
+            <objects>
+                <navigationController id="HSn-oE-0DA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xal-WF-rOw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Sv3-04-eqg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xT1-nH-klJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="-37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn-blue.png" width="182" height="47"/>
+        <image name="btn-yellow.png" width="182" height="47"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onLogout:"/>
+                <relationship kind="action" name="onStart:"/>
+                <relationship kind="outlet" name="buttonEnterOut" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonLogoutOut" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
